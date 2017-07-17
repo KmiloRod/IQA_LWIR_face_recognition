@@ -23,10 +23,10 @@ For calculation of the IQA metrics, the code requires the "matlabPyrTools" packa
 In addition to our own LWIR image segmentation scheme, we use an implementation of the approach by Filipe and Alexandre, which is also provided in the folder './Segmentation'. The method is described in the paper: Silvio Filipe and Luís A. Alexandre, “Algorithms for Invariant Long-Wave Infrared Face Segmentation: Evaluation and Comparison” Pattern Analysis and Applications, vol. 17, Issue 4, pp. 823-837.
 
 ## Installation
-Copy or clone the complete repository folder to a working directory of Matlab, and call the functions from the Matlab command window. All folders and sub-folders must be added to the Matlab path.
+Download or clone the complete repository folder to a working directory of Matlab, and call the functions from the Matlab command window. All folders and sub-folders must be added to the Matlab path.
 
 ## LWIR Facial Images Sources
-Three LWIR face image databases are included, which were used for obtaining the results reported in our paper (UND, PUJ-T360 and PUJ-FONE). They are in the 'LWIRdatabases' folder, organized in the file structure used to the tests we performed, and already segmented and registered. The sub-folders 'Classifier' in each data set, contain the sub-sets used for testing the TST-method enhanced with NSS features. The distorted versions of all the images are provided as well, with four different distortions (additive white gaussian noise, gaussian blur, JPEG compression and non-uniformity). Raw versions (without registration and segmentation) of the databases we generated can be found at http://bit.ly/PUJ_IR_db. Please, refer to the paper referred in the Synopsis for further details on the databases.
+Three LWIR face image databases are included, which were used for obtaining the results reported in our paper (UND, PUJ-T360, and PUJ-FONE). They are in the 'LWIRdatabases' folder, organized in the file structure used to the tests we performed, and already segmented and registered. The sub-folders 'Classifier' in each data set, contain the sub-sets used for testing the TST-method enhanced with NSS features. The distorted versions of all the images are provided as well, with four different distortions (additive white gaussian noise, gaussian blur, JPEG compression and non-uniformity). Please, refer to the paper referred in the Synopsis for further details on the databases.
 
 ## Tests
 
@@ -36,7 +36,7 @@ There are three main Matlab functions for evaluating performance of the proposed
 - ```ResultsIdAndVerifTS_Class138_All```: This function tests the TST-based method, with the NSS features added.
 - ```ResultsCW_All```: This function tests the method based on the CW-SSIM index.
 
-These functions must be called from the location containing the folders with the probe images to be tested. The functions return a matrix containing performance metrics for identification and verifications modes, and plot the ROC and CMC curves for the thresholds values tested. They receive as inputs the Distortion string, Database identification string, and a vector of Threshold values. See the help of each function source file for detailed information on how to use it.
+These functions must be called from the location containing the folders with the probe images to be tested. The functions return a matrix containing performance metrics for identification and verifications modes, and plot the ROC and CMC curves for the thresholds values tested. They receive as inputs the Distortion string, Database identification string, and a vector of Threshold values. See the help and comments in each function source file for detailed information on how to use it.
 
 ### Usage examples
 
@@ -57,13 +57,13 @@ These functions must be called from the location containing the folders with the
 Here is a list of other useful functions and scripts provided:
 
 - ```TrainingPreprocessing```: Prepares the NSS features for training the SVM classifier of the desired database.
-- ```TSSizesExtract```: Extract the size of the thermal signatures of LWIR facial images in a folder.
+- ```TSSizesExtract```: Extract the size of the bounding box enclosing the thermal signatures of LWIR facial images in a folder.
 - ```CWSimilarityImageSet```: Calculates similarity measures between a thermal face image and all the thermal images from an image set, using the CW-SSIM similarity index.
 - ```AWNdist```, ```BLURdist```, ```JPEGdist``` and ```NUdist```: These functions add artificial distortions to the images in a directory, with the desired input parameters governing the severity level of the distortion.
 - ```ProcessTSScores``` and ```ProcessCWScores```: allow to test several threshold with previously calculated similarity scores for specific subsets P_G and P_N, using the TST-based or CW-SSIM based methods for LWIR face recognition, respectively.
 - ```ParamRank``` and ```ParamSurfaceGen```: can be used to analyze the dependence of the recognition accuracy in the TST method on the values of parameters \kappa and \rho.
 - ```showOverlappedTS```: shows a thermal signature and a TST overlapped in the same figure.
-- Folders 'Registration' and 'Segmentation' provide the code used for align the faces in the images, and segment them from the background respectively.
+- Folders 'Registration' and 'Segmentation' provide the code used for aligning the faces in the images, and segmenting them from the background respectively.
 
 ## Contributors
 
