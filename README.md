@@ -18,15 +18,15 @@ This software was developed in MATLAB R2016b (64 bits) in Mac OS Sierra 10.12.5.
 
 Our NSS features estimation slightly modifies the implementation in Matlab by Goodall et al. The original version of this software is available at http://live.ece.utexas.edu/research/IR/index.htm. For more information, please refer to the paper: T. Goodall, A. C. Bovik, and Nicholas G. Paulter Jr., "Tasking on Natural Statistics of Infrared Images", IEEE Transactions on Image Processing, vol. 25, no. 1, pp 65-79, Jan 2016.
 
-For calculation of the IQA metrics, the code requires the "matlabPyrTools" package developed by Eero Simoncelli, which is included in the folder './IQA/matlabPyrTools/'. We recommend recompiling the mex versions of the tools for your operating system and Matlab version, running the ```compilePyrTools``` script in the 'MEX' sub-folder. Further information about this package can be found at http://www.cns.nyu.edu/~lcv/software.php.
+For calculation of the IQA metrics, the code requires the "matlabPyrTools" package developed by Eero Simoncelli, which is included in the folder ```./IQA/matlabPyrTools/```. We recommend recompiling the mex versions of the tools for your operating system and Matlab version, running the ```compilePyrTools``` script in the ```MEX``` sub-folder. Further information about this package can be found at http://www.cns.nyu.edu/~lcv/software.php.
 
-In addition to our own LWIR image segmentation scheme, we use an implementation of the approach by Filipe and Alexandre, which is also provided in the folder './Segmentation'. The method is described in the paper: Silvio Filipe and Luís A. Alexandre, “Algorithms for Invariant Long-Wave Infrared Face Segmentation: Evaluation and Comparison” Pattern Analysis and Applications, vol. 17, Issue 4, pp. 823-837.
+In addition to our own LWIR image segmentation scheme, we use an implementation of the approach by Filipe and Alexandre, which is also provided in the folder ```./Segmentation```. The method is described in the paper: Silvio Filipe and Luís A. Alexandre, “Algorithms for Invariant Long-Wave Infrared Face Segmentation: Evaluation and Comparison” Pattern Analysis and Applications, vol. 17, Issue 4, pp. 823-837.
 
 ## Installation
-Download or clone the complete repository folder to a working directory of Matlab, and call the functions from the Matlab command window. All folders and sub-folders must be added to the Matlab path.
+Download or clone the complete repository to a working directory of Matlab, and call the functions from the Matlab command window. All folders and sub-folders must be added to the Matlab path.
 
 ## LWIR Facial Images Sources
-Three LWIR face image databases are included, which were used for obtaining the results reported in our paper (UND, PUJ-T360, and PUJ-FONE). They are in the 'LWIRdatabases' folder, organized in the file structure used to the tests we performed, and already segmented and registered. The sub-folders 'Classifier' in each data set, contain the sub-sets used for testing the TST-method enhanced with NSS features. The distorted versions of all the images are provided as well, with four different distortions (additive white gaussian noise, gaussian blur, JPEG compression and non-uniformity). Please, refer to the paper referred in the Synopsis for further details on the databases.
+Three LWIR face image databases are included, which were used for obtaining the results reported in our paper (UND, PUJ-T360, and PUJ-FONE). They are in the ```LWIRdatabases``` folder, organized in the file structure used to the tests we performed, and already segmented and registered. The sub-folders ```Classifier``` in each data set, contain the sub-sets used for testing the TST-method enhanced with NSS features. The distorted versions of all the images are provided as well, with four different distortions (additive white gaussian noise, gaussian blur, JPEG compression and non-uniformity). Please, refer to the paper referred in the Synopsis for further details on the databases.
 
 ## Tests
 
@@ -63,7 +63,7 @@ Here is a list of other useful functions and scripts provided:
 - ```ProcessTSScores``` and ```ProcessCWScores```: allow to test several threshold with previously calculated similarity scores for specific subsets P_G and P_N, using the TST-based or CW-SSIM based methods for LWIR face recognition, respectively.
 - ```ParamRank``` and ```ParamSurfaceGen```: can be used to analyze the dependence of the recognition accuracy in the TST method on the values of parameters \kappa and \rho.
 - ```showOverlappedTS```: shows a thermal signature and a TST overlapped in the same figure.
-- Folders 'Registration' and 'Segmentation' provide the code used for aligning the faces in the images, and segmenting them from the background respectively.
+- Folders ```Registration``` and ```Segmentation``` provide the code used for aligning the faces in the images, and segmenting them from the background respectively.
 
 ## Contributors
 
