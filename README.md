@@ -73,7 +73,7 @@ Here is a list of other useful functions and scripts provided:
 
 ## Acknowledgments
 
-Thanks to the Laboratory for Image & Video Engineering (LIVE) team from The University of Texas at Austin, TX, USA, for providing the initial implementations of the NSS and CW-SSIM metrics implementations.
+Thanks to the [Laboratory for Image & Video Engineering (LIVE)](http://live.ece.utexas.edu) team from The University of Texas at Austin, TX, USA, for providing the initial implementations of the NSS and CW-SSIM metrics implementations.
 
-Thanks to Silvio Filipe from the University of Beira Interior, Covilhã, Portugal, for his code for segmenting LWIR facial images.
+Thanks to [Silvio Filipe](http://socia-lab.di.ubi.pt/~silvio/) from the University of Beira Interior, Covilhã, Portugal, for his code for segmenting LWIR facial images.
 
