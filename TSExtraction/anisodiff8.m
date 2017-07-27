@@ -103,8 +103,8 @@ for i = 1:niter
   diff = diff + lambda*(cN.*deltaN + cS.*deltaS + cE.*deltaE + cW.*deltaW + cNE.*deltaNE + cNW.*deltaNW + cSE.*deltaSE + cSW.*deltaSW);
 
 %  Uncomment the following to see a progression of images
-  % subplot(ceil(sqrt(niter)),ceil(sqrt(niter)), i)
- % imagesc(diff), colormap(gray), axis image
+%   subplot(ceil(sqrt(niter)),ceil(sqrt(niter)), i)
+%  imagesc(diff), colormap(gray), axis image
 
 end
 %fprintf('\n');

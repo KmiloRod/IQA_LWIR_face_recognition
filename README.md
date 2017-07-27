@@ -42,15 +42,15 @@ These functions must be called from the location containing the folders with the
 
 1. Testing the TST method without using NSS features, on pristine images from the UND database, with three values of threshold (0.4, 0.6 and 0.9):
 
-	```TSResults = ResultsIdAndVerifTS__All('Pristine','UND',[0.4 0.6 0.9]);```
+	```>> TSResults = ResultsIdAndVerifTS__All('Pristine','UND',[0.4 0.6 0.9]);```
 
 2. Testing the TST method enhanced with NSS features on images from the PUJ-FONE database affected by the second severity level of blur, varying the similarity threshold from 0.2 to 0.8:
 
-	```TSResults = ResultsIdAndVerifTS_Class138_All('Blur2','FONE',0.2:0.005:0.8);```
+	```>> TSResults = ResultsIdAndVerifTS_Class138_All('Blur2','FONE',0.2:0.005:0.8);```
 
-3. Testing the CW-SSIM method on images from the PUJ-T360 database affected by non-uniformity, with threshold values from an array named 'Tresh_array':
+3. Testing the CW-SSIM method on images from the PUJ-T360 database affected by non-uniformity, with threshold values from an array named ```Tresh_array```:
 
-	```TSResults = ResultsCW_All('NU','PUJ',Thresh_array);```
+	```>> TSResults = ResultsCW_All('NU','PUJ',Thresh_array);```
 
 ## Auxiliary Functions
 
@@ -61,7 +61,7 @@ Here is a list of other useful functions and scripts provided:
 - ```CWSimilarityImageSet```: Calculates similarity measures between a thermal face image and all the thermal images from an image set, using the CW-SSIM similarity index.
 - ```AWNdist```, ```BLURdist```, ```JPEGdist``` and ```NUdist```: These functions add artificial distortions to the images in a directory, with the desired input parameters governing the severity level of the distortion.
 - ```ProcessTSScores``` and ```ProcessCWScores```: allow to test several threshold with previously calculated similarity scores for specific subsets P_G and P_N, using the TST-based or CW-SSIM based methods for LWIR face recognition, respectively.
-- ```ParamRank``` and ```ParamSurfaceGen```: can be used to analyze the dependence of the recognition accuracy in the TST method on the values of parameters \kappa and \rho.
+- ```ParamRank``` and ```ParamSurfaceGen```: can be used to analyze the dependence of the recognition accuracy in the TST method on the values of parameters $\kappa$ and $\rho$.
 - ```showOverlappedTS```: shows a thermal signature and a TST overlapped in the same figure.
 - Folders ```Registration``` and ```Segmentation``` provide the code used for aligning the faces in the images, and segmenting them from the background respectively.
 
