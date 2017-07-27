@@ -44,13 +44,19 @@ These functions must be called from the location containing the folders with the
 
 	```>> TSResults = ResultsIdAndVerifTS__All('Pristine','UND',[0.4 0.6 0.9]);```
 
+	This command returns two figures with ROC and CMC curves, writes the matrix of performance metrics to the file ```TSResults.csv```, and saves the genuine and impostor similarity scores in the files ```GenScores.mat``` and ```ImpScores.mat``` respectively.
+
 2. Testing the TST method enhanced with NSS features on images from the PUJ-FONE database affected by the second severity level of blur, varying the similarity threshold from 0.2 to 0.8:
 
 	```>> TSResults = ResultsIdAndVerifTS_Class138_All('Blur2','FONE',0.2:0.005:0.8);```
 
+	This command returns two figures with ROC and CMC curves, writes the matrix of performance metrics to the file ```TSResults.csv```, and saves the genuine and impostor similarity scores in the files ```GenScores.mat``` and ```ImpScores.mat``` respectively.
+
 3. Testing the CW-SSIM method on images from the PUJ-T360 database affected by non-uniformity, with threshold values from an array named ```Tresh_array```:
 
 	```>> TSResults = ResultsCW_All('NU','PUJ',Thresh_array);```
+
+	This command returns two figures with ROC and CMC curves, writes the matrix of performance metrics to the file ```CWResults.csv```, and saves the genuine and impostor similarity scores in the files ```CW_GenScores.mat``` and ```CW_ImpScores.mat``` respectively.
 
 ## Auxiliary Functions
 
