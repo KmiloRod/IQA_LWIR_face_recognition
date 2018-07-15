@@ -2,13 +2,15 @@
 
 Authors: Camilo Rodríguez, Hernán Benítez and Alan Bovik
 
-Contact: camilo.g.rodriguezpulecio@ieee.org
+Last version date: July 27th, 2017
+
+Contact: camilo.rodriguez@javerianacali.edu.co
 
 ## Synopsis
 
 This is the implementation in Matlab of the Long Wave Infrared (LWIR) face recognition schemes presented in:
 
-"Making Infrared Face Recognition Robust Against Perceptual Image Quality Degradation", C. G. Rodríguez Pulecio, H. D. Benítez Restrepo, A. C. Bovik.
+"Making Infrared Face Recognition Robust Against Image Quality Degradations", C. G. Rodríguez Pulecio, H. D. Benítez Restrepo, A. C. Bovik.
 
 The paper proposes two LWIR face recognition strategies involving Image Quality Assessment (IQA) for improving the recognition accuracy. The first approach is based on Thermal Signature Templates (TST) and enhanced with Natural Scene Statistics (NSS) features. The second framework uses the Complex Wavelet Structural Similarity Index (CW-SSIM) to match LWIR facial images to the subjects identities.
 
@@ -73,9 +75,9 @@ Here is a list of other useful functions and scripts provided:
 
 ## Contributors
 
-* **Camilo Rodríguez** - TST and CW-SSIM method implementations, SVM classifier, databases adjustment and ordering, tests and comments - [KmiloRod](http://github.com/KmiloRod)
+* **Camilo Rodríguez** ([KmiloRod](http://github.com/KmiloRod)) - TST and CW-SSIM method implementations, SVM classifier, databases adjustment and ordering, tests and comments
 * **Hernán Benítez** - Registration and segmentation methods, TS extraction process adjustments and testing.
-* **David Moreno** - NSS features extraction adaptation - [ujemd](http://github.com/ujemd)
+* **David Moreno** ([ujemd](http://github.com/ujemd)) - NSS features extraction adaptation
 
 ## Acknowledgments
 
