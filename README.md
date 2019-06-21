@@ -4,7 +4,7 @@ Authors: Camilo Rodríguez, Hernán Benítez and Alan Bovik
 
 Last version date: July 27th, 2017
 
-Contact: camilo.rodriguez@javerianacali.edu.co
+Contact: camilorodriguez@javerianacali.edu.co
 
 ## Synopsis
 
